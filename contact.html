@@ -1,0 +1,47 @@
+<section id="contact" class="contact section">
+  <div class="container contact__inner">
+    <header class="contact__header">
+      <h2>Get in touch</h2>
+      <p class="contact__blurb">We'd love to hear about your project. Send a message or reach us via email, phone, or Facebook.</p>
+    </header>
+
+    <div class="contact__content">
+      <form class="contact__form" aria-label="Contact form">
+        <div class="field">
+          <label for="ctName">Name</label>
+          <input id="ctName" name="name" type="text" autocomplete="name" required />
+        </div>
+        <div class="field">
+          <label for="ctEmail">Email</label>
+          <input id="ctEmail" name="email" type="email" autocomplete="email" required />
+        </div>
+        <div class="field field--full">
+          <label for="ctMsg">Message</label>
+          <textarea id="ctMsg" name="message" rows="5" required></textarea>
+        </div>
+        <div class="actions">
+          <button type="submit" class="btn-primary">Send message</button>
+          <span class="form-status" aria-live="polite"></span>
+        </div>
+      </form>
+
+      <aside class="contact__info" aria-label="Contact information">
+        <ul class="contact__list">
+          <li>
+            <strong>Email:</strong>
+            <a class="contact__link" href="mailto:hello@example.com">hello@example.com</a>
+          </li>
+          <li>
+            <strong>Phone:</strong>
+            <a class="contact__link" href="tel:+639171234567">+63 917 123 4567</a>
+          </li>
+          <li>
+            <strong>Facebook:</strong>
+            <a class="contact__link" href="https://www.facebook.com/" target="_blank" rel="noopener">facebook.com</a>
+          </li>
+        </ul>
+        <p class="contact__note">Prefer email? The form will open your email app pre-filled, or use the address above.</p>
+      </aside>
+    </div>
+  </div>
+</section>
