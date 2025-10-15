@@ -1,30 +1,18 @@
-/* Lightweight standalone navbar styles */
-:root {
-  --nav-bg: #ffffff;
-  --nav-fg: #1f2937; /* gray-800 */
-  --nav-accent: #2563eb; /* blue-600 */
-  --nav-border: #e5e7eb; /* gray-200 */
-  --nav-hover: #f3f4f6; /* gray-100 */
-  --shadow-sm: 0 1px 2px rgba(0,0,0,0.04), 0 1px 1px rgba(0,0,0,0.03);
-
-  /* NEW: header height for mobile */
-  --nav-h: 56px;
+/* Ensure the injected wrapper also sticks (robust across browser quirks) */
+#navbar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 50; /* keep above content */
 }
-
-
-/* NEW: Dark theme overrides for the navbar */
-:root[data-theme="dark"] {
-  --nav-bg: #0d1117;                /* GitHub-like dark */
-  --nav-fg: #e5e7eb;                /* gray-200 */
-  --nav-border: #374151;            /* gray-700: clearer contrast on dark */
-  --nav-hover: rgba(255, 255, 255, .06);
-  --shadow-sm: 0 1px 2px rgba(0,0,0,0.2); /* subtle, optional */
-}
+/* Lightweight standalone navbar styles (consumes design tokens) */
+:root { --nav-h: 56px; }
 
 
 html.no-scroll, body.no-scroll { overflow: hidden; }
 
 .nav {
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 50;

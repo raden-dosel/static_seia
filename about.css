@@ -25,11 +25,11 @@
 	display: grid;
 	gap: .75rem;
 }
-.about__svc { border: 1px solid var(--nav-border); border-radius: 12px; padding: .75rem .9rem; background: var(--bg); }
+.about__svc { border: 1px solid var(--nav-border); border-radius: var(--radius-lg); padding: .75rem .9rem; background: var(--card); }
 .svc__title { margin: 0 0 .25rem; font-size: 1rem; }
 .svc__desc { margin: 0; color: var(--muted); }
 
-.about__aside {padding: 0rem; background: var(--bg); }
+.about__aside {padding: 0rem; }
 .about__why { list-style: none; margin: 0 0 0; padding: 0; display: grid; gap: 0.5rem; }
 .about__why li p { margin: 0rem 0 0; color: var(--muted); }
 
@@ -38,7 +38,7 @@
 	margin: 0;
 	padding: 0;
 	border: 1px solid var(--nav-border);
-	border-radius: 12px;
+	border-radius: var(--radius-lg);
 	padding: .75rem .9rem;
 	display: grid;
 	gap: 0.4rem;

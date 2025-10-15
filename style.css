@@ -7,6 +7,27 @@
   /* Letterbox color for media containers (light) */
   --media-letterbox: #ffffff;
 
+  /* Design System: core tokens */
+  --brand: #2563eb;      /* blue-600 */
+  --accent: var(--brand);
+  --ring: #60a5fa;       /* blue-400 */
+  --ok: #10b981;         /* emerald-500 */
+  --error: #ef4444;      /* red-500 */
+  --card: #ffffff;       /* surfaces/cards */
+  --border: #e5e7eb;     /* gray-200 */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 12px;
+  --shadow-sm: 0 1px 2px rgba(0,0,0,0.04), 0 1px 1px rgba(0,0,0,0.03);
+  --shadow-md: 0 6px 18px rgba(0,0,0,.12);
+
+  /* Navigation tokens (shared) */
+  --nav-bg: var(--card);
+  --nav-fg: var(--fg);
+  --nav-accent: var(--accent);
+  --nav-border: var(--border);
+  --nav-hover: #f3f4f6; /* gray-100 */
+
   /* Let form controls etc. adapt */
   color-scheme: light;
 }
@@ -18,6 +39,21 @@
   --muted: #9ca3af;       /* gray-400 */
   /* Letterbox color for media containers (dark) */
   --media-letterbox: #000000;
+
+  /* Design System overrides (dark) */
+  --brand: #3b82f6;       /* blue-500 */
+  --accent: var(--brand);
+  --ring: #60a5fa;        /* blue-400 */
+  --ok: #34d399;          /* emerald-400 */
+  --error: #f87171;       /* red-400 */
+  --card: #0f172a;        /* slate-900 */
+  --border: #374151;      /* gray-700 */
+  --nav-bg: #0d1117;      /* GitHub-like dark */
+  --nav-fg: var(--fg);
+  --nav-accent: var(--accent);
+  --nav-border: var(--border);
+  --nav-hover: rgba(255, 255, 255, .06);
+  --shadow-sm: 0 1px 2px rgba(0,0,0,0.2);
 
   color-scheme: dark;
 }
@@ -47,6 +83,17 @@ html {
 
 h1 { font-size: 2rem; margin: 0 0 0.75rem; }
 p { line-height: 1.6; color: inherit; }
+
+/* Global links */
+a { color: var(--brand); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* Consistent focus ring */
+:focus-visible {
+  outline: 2px solid color-mix(in srgb, var(--ring) 70%, transparent);
+  outline-offset: 2px;
+  border-radius: var(--radius-sm);
+}
 
 /* Floating back-to-top button */
 .fab-top {

@@ -1,5 +1,5 @@
 /* Minimal, responsive footer */
-.site-footer { border-top: 1px solid var(--nav-border); padding-top: 1.5rem; }
+.site-footer { border-top: 1px solid var(--nav-border); padding-top: 1.5rem; background: var(--card); }
 .footer__inner { display: flex; align-items: center; justify-content: space-between; gap: .75rem; }
 
 .footer__nav { display: flex; gap: .75rem; flex-wrap: wrap; }
