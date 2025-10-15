@@ -1,0 +1,102 @@
+[
+  {
+    "id": "greenwoods09192025",
+    "title": "Electric Fence at Greenwoods",
+    "project": "fence",
+    "date": "2025-09",
+    "loc": "prov",
+    "tags": ["Electric Fence", "Metro Manila"],
+    "desc": "Greenwoods is a residential community in Rizal, Philippines. We designed and implemented an electric fence system to enhance the security of the area. The project involved selecting appropriate materials, planning the layout, and ensuring compliance with local regulations.",
+    "thumbUrl": "images/greenwoods_taytay_rizal_09172025/greenwoods_taytay_rizal_09172025.jpg",
+    "category": "Electric Fence",
+    "images": [
+      { "src": "images/greenwoods_taytay_rizal_09172025/greenwoods_taytay_rizal_09172025.jpg", "alt": "Image 1" },
+      { "src": "images/greenwoods_taytay_rizal_09172025/greenwoods_taytay_rizal_091720251.jpg", "alt": "Image 2" },
+      { "src": "images/greenwoods_taytay_rizal_09172025/greenwoods_taytay_rizal_091720252.jpg", "alt": "Image 3" },
+      { "src": "images/greenwoods_taytay_rizal_09172025/greenwoods_taytay_rizal_091720253.jpg", "alt": "Image 4" }
+    ]
+  },
+  {
+    "id": "vistavalley08172025",
+    "title": "Electric Fence at Vista Valley",
+    "project": "fence",
+    "date": "2025-08",
+    "loc": "metro",
+    "tags": ["Electric Fence", "Metro Manila"],
+    "desc": "Vista Valley is a residential area in Antipolo, Philippines. We designed and implemented an electric fence system to enhance the security of the community. The project involved selecting appropriate materials, planning the layout, and ensuring compliance with local regulations.",
+    "thumbUrl": "images/vista_valley_marikina_08172025/vista_valley_marikina_08172025.jpg",
+    "category": "Electric Fence",
+    "images": [
+      { "src": "images/vista_valley_marikina_08172025/vista_valley_marikina_08172025.jpg", "alt": "Image 1" },
+      { "src": "images/vista_valley_marikina_08172025/vista_valley_marikina_081720251.jpg", "alt": "Image 2" },
+      { "src": "images/vista_valley_marikina_08172025/vista_valley_marikina_081720252.jpg", "alt": "Image 3" },
+      { "src": "images/vista_valley_marikina_08172025/vista_valley_marikina_081720253.jpg", "alt": "Image 4" }
+    ]
+  },
+  {
+    "id": "brand-kit",
+    "title": "Brand identity kit",
+    "project": "fence",
+    "date": "2024-11",
+    "loc": "metro",
+    "tags": ["Electric Fence", "Metro Manila"],
+    "desc": "A minimal brand starter kit with a clear, modern palette.",
+    "thumbUrl": "images/cover.jpg",
+    "category": "Brand"
+  },
+  {
+    "id": "dashboard-ui",
+    "title": "Dashboard UI",
+    "project": "gate",
+    "date": "2024-09",
+    "loc": "prov",
+    "tags": ["Automatic Sliding Gate", "Provincial"],
+    "desc": "Compact dashboard with focused visuals and keyboard-friendly interactions.",
+    "thumbUrl": "images/cover.jpg",
+    "category": "Web"
+  },
+  {
+    "id": "packaging",
+    "title": "Packaging mockups",
+    "project": "fence",
+    "date": "2025-02",
+    "loc": "prov",
+    "tags": ["Electric Fence", "Provincial"],
+    "desc": "Clean, consistent packaging mockups for an e-commerce refresh.",
+    "thumbUrl": "images/cover.jpg",
+    "category": "Brand"
+  },
+  {
+    "id": "onboarding",
+    "title": "Onboarding flow",
+    "project": "gate",
+    "date": "2024-07",
+    "loc": "metro",
+    "tags": ["Automatic Sliding Gate", "Metro Manila"],
+    "desc": "Frictionless onboarding flow with progressive disclosure.",
+    "thumbUrl": "images/cover.jpg",
+    "category": "Mobile"
+  },
+  {
+    "id": "landing-ab",
+    "title": "Landing page A/B",
+    "project": "fence",
+    "date": "2025-05",
+    "loc": "metro",
+    "tags": ["Electric Fence", "Metro Manila"],
+    "desc": "Tested variants to maximize signups and readability.",
+    "thumbUrl": "images/cover.jpg",
+    "category": "Web"
+  },
+  {
+    "id": "icon-set",
+    "title": "Icon set",
+    "project": "gate",
+    "date": "2024-03",
+    "loc": "prov",
+    "tags": ["Automatic Sliding Gate", "Provincial"],
+    "desc": "Custom icon family with consistent stroke and sizing.",
+    "thumbUrl": "images/cover.jpg",
+    "category": "Brand"
+  }
+]

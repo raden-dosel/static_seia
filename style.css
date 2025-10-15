@@ -4,6 +4,8 @@
   --bg: #F8F9FA;
   --fg: #111827; /* gray-900 */
   --muted: #6b7280; /* gray-500 */
+  /* Letterbox color for media containers (light) */
+  --media-letterbox: #ffffff;
 
   /* Let form controls etc. adapt */
   color-scheme: light;
@@ -14,6 +16,8 @@
   --bg: #0b0f19;          /* near-black with a hint of blue */
   --fg: #e5e7eb;          /* gray-200 */
   --muted: #9ca3af;       /* gray-400 */
+  /* Letterbox color for media containers (dark) */
+  --media-letterbox: #000000;
 
   color-scheme: dark;
 }

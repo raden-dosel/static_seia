@@ -1,47 +1,77 @@
-<section id="contact" class="contact section">
-  <div class="container contact__inner">
-    <header class="contact__header">
-      <h2>Get in touch</h2>
-      <p class="contact__blurb">We'd love to hear about your project. Send a message or reach us via email, phone, or Facebook.</p>
+<section id="contact" class="section">
+  <div class="container">
+    <header class="page-header">
+      <h1>Contact</h1>
+      <p class="lede">Have a project in mind or just want to say hello? Let’s talk.</p>
     </header>
 
-    <div class="contact__content">
-      <form class="contact__form" aria-label="Contact form">
-        <div class="field">
-          <label for="ctName">Name</label>
-          <input id="ctName" name="name" type="text" autocomplete="name" required />
-        </div>
-        <div class="field">
-          <label for="ctEmail">Email</label>
-          <input id="ctEmail" name="email" type="email" autocomplete="email" required />
-        </div>
-        <div class="field field--full">
-          <label for="ctMsg">Message</label>
-          <textarea id="ctMsg" name="message" rows="5" required></textarea>
-        </div>
-        <div class="actions">
-          <button type="submit" class="btn-primary">Send message</button>
-          <span class="form-status" aria-live="polite"></span>
-        </div>
-      </form>
+    <section class="contact-grid">
+      <aside class="contact-info" aria-labelledby="contact-info-title">
+        <h2 id="contact-info-title" class="sr-only">Contact information</h2>
 
-      <aside class="contact__info" aria-label="Contact information">
-        <ul class="contact__list">
-          <li>
-            <strong>Email:</strong>
-            <a class="contact__link" href="mailto:hello@example.com">hello@example.com</a>
-          </li>
-          <li>
-            <strong>Phone:</strong>
-            <a class="contact__link" href="tel:+639171234567">+63 917 123 4567</a>
-          </li>
-          <li>
-            <strong>Facebook:</strong>
-            <a class="contact__link" href="https://www.facebook.com/" target="_blank" rel="noopener">facebook.com</a>
-          </li>
-        </ul>
-        <p class="contact__note">Prefer email? The form will open your email app pre-filled, or use the address above.</p>
+        <div class="card">
+          <h3>Email</h3>
+          <p><a href="mailto:you@example.com">you@example.com</a></p>
+        </div>
+
+        <div class="card">
+          <h3>Social</h3>
+          <ul class="social-list">
+            <li><a href="https://github.com/yourhandle" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/yourhandle" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="https://x.com/yourhandle" target="_blank" rel="noopener">X</a></li>
+          </ul>
+        </div>
+
+        <p class="note">Prefer email? I usually reply within 1–2 business days.</p>
       </aside>
-    </div>
+
+      <section class="contact-form" aria-labelledby="contact-form-title">
+        <h2 id="contact-form-title" class="sr-only">Contact form</h2>
+
+        <form id="contact-form" novalidate>
+          <!-- Honeypot: leave blank -->
+          <label class="hp" aria-hidden="true">
+            Company
+            <input type="text" name="company" tabindex="-1" autocomplete="off" />
+          </label>
+
+          <!-- Submission timer -->
+          <input type="hidden" name="form_start" id="form_start" />
+
+          <div class="field">
+            <label for="name">Name *</label>
+            <input id="name" name="name" type="text" required minlength="2" maxlength="100" autocomplete="name" />
+            <small class="error" data-for="name"></small>
+          </div>
+
+          <div class="field">
+            <label for="email">Email *</label>
+            <input id="email" name="email" type="email" required inputmode="email" autocomplete="email" />
+            <small class="error" data-for="email"></small>
+          </div>
+
+          <div class="field">
+            <label for="subject">Subject</label>
+            <input id="subject" name="subject" type="text" maxlength="150" required />
+            <small class="error" data-for="subject"></small>
+          </div>
+
+          <div class="field">
+            <label for="message">Message *</label>
+            <textarea id="message" name="message" required minlength="10" maxlength="2000" rows="6"></textarea>
+            <small class="error" data-for="message"></small>
+          </div>
+
+          <div class="actions">
+            <button id="submit-btn" type="submit" class="btn" disabled>
+              <span class="btn-label">Send message</span>
+              <span class="spinner" aria-hidden="true"></span>
+            </button>
+            <p id="form-feedback" class="feedback" role="status" aria-live="polite"></p>
+          </div>
+        </form>
+      </section>
+    </section>
   </div>
 </section>

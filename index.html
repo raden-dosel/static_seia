@@ -1,36 +1,46 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<title>Home · LiteSite</title>
-		<link rel="stylesheet" href="style.css" />
-		<link rel="stylesheet" href="navbar.css" />
-		<link rel="stylesheet" href="hero.css" />
-		<link rel="stylesheet" href="about.css" />
-		<link rel="stylesheet" href="portfolio.css" />
-		<link rel="stylesheet" href="contact.css" />
-		<link rel="stylesheet" href="footer.css" />
-	</head>
-	<body>
-		<div id="navbar"></div>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Home · LiteSite</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="hero.css" />
+    <link rel="stylesheet" href="about.css" />
+    <link rel="stylesheet" href="portfolio.css" />
+    <link rel="stylesheet" href="contact.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({ publicKey: "DcFW85dfsTEQ2FLF3" });
+      })();
+    </script>
+    <script src="app.js" defer></script>
+    <script src="navbar.js" defer></script>
+    <script src="hero.js" defer></script>
+    <script src="about.js" defer></script>
+    <script src="portfolio.js" defer></script>
+    <script src="contact.js" defer></script>
+    <script src="footer.js" defer></script>
+  </head>
+  <body>
+    <div id="navbar"></div>
 
-		<div id="hero"></div>
+    <div id="hero"></div>
 
-		<main class="container">
-		    <div id="about"></div>
-		    <div id="portfolio" class="section"></div>
-		    <div id="contact" class="section"></div>
-		</main>
+    <main class="container">
+      <div id="about"></div>
+      <div id="portfolio" class="section"></div>
+      <div id="contact" class="section"></div>
+    </main>
 
-		<footer id="footer"></footer>
+    <footer id="footer"></footer>
 
-			<script src="app.js"></script>
-			<script src="navbar.js" defer></script>
-			<script src="hero.js" defer></script>
-			<script src="about.js" defer></script>
-			<script src="portfolio.js" defer></script>
-			<script src="contact.js" defer></script>
-			<script src="footer.js" defer></script>
-	</body>
+    
+  </body>
 </html>
