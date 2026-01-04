@@ -1,32 +1,32 @@
 /* Base page styles */
 :root {
-  /* Light theme (default) */
-  --bg: #F8F9FA;
-  --fg: #111827; /* gray-900 */
-  --muted: #6b7280; /* gray-500 */
+  /* Light theme (default) - enhanced aesthetics */
+  --bg: #f5f7fc;         /* subtle blue-tinted light gray for better aesthetics */
+  --fg: #0f172a;         /* darker foreground for better contrast */
+  --muted: #64748b;      /* slate-500 for better readability */
   /* Letterbox color for media containers (light) */
   --media-letterbox: #ffffff;
 
   /* Design System: core tokens */
-  --brand: #2563eb;      /* blue-600 */
-  --accent: var(--brand);
-  --ring: #60a5fa;       /* blue-400 */
-  --ok: #10b981;         /* emerald-500 */
-  --error: #ef4444;      /* red-500 */
-  --card: #ffffff;       /* surfaces/cards */
-  --border: #e5e7eb;     /* gray-200 */
+  --brand: #1e40af;      /* blue-700 for more prominent branding */
+  --accent: #0ea5e9;     /* sky-500 for vibrant accents */
+  --ring: #3b82f6;       /* blue-500 for focus states */
+  --ok: #059669;         /* emerald-600 for success states */
+  --error: #dc2626;      /* red-600 for error states */
+  --card: #ffffff;       /* surfaces/cards remain white for clarity */
+  --border: #cbd5e1;     /* slate-300 for more visible borders */
   --radius-sm: 6px;
   --radius-md: 10px;
   --radius-lg: 12px;
-  --shadow-sm: 0 1px 2px rgba(0,0,0,0.04), 0 1px 1px rgba(0,0,0,0.03);
-  --shadow-md: 0 6px 18px rgba(0,0,0,.12);
+  --shadow-sm: 0 1px 3px rgba(15,23,42,0.08), 0 1px 2px rgba(15,23,42,0.06);
+  --shadow-md: 0 4px 12px rgba(15,23,42,0.12), 0 2px 6px rgba(15,23,42,0.08);
 
   /* Navigation tokens (shared) */
   --nav-bg: var(--card);
   --nav-fg: var(--fg);
   --nav-accent: var(--accent);
   --nav-border: var(--border);
-  --nav-hover: #f3f4f6; /* gray-100 */
+  --nav-hover: #f1f5f9; /* slate-100 for subtle hover states */
 
   /* Let form controls etc. adapt */
   color-scheme: light;
@@ -69,7 +69,7 @@ html, body {
 /* Smooth scrolling and offset for sticky navbar */
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 56px; /* matches --nav-h */
+  scroll-padding-top: var(--nav-h); /* Accounts for navbar height when scrolling to sections */
 }
 
 .container {
@@ -78,11 +78,28 @@ html {
   padding: 0 1rem;
 }
 
-/* Section spacing helper */
-.section { padding: 2rem 0 3rem; }
+/* Section spacing helper - minimal vertical padding */
+.section { padding: 0.75rem 0 1rem; }
 
-h1 { font-size: 2rem; margin: 0 0 0.75rem; }
+/* Mobile-first typography scaling */
+h1 { font-size: clamp(1.5rem, 5vw, 2rem); margin: 0 0 0.75rem; }
+h2 { font-size: clamp(1.25rem, 4vw, 1.6rem); }
+h3 { font-size: clamp(1rem, 3vw, 1.25rem); }
 p { line-height: 1.6; color: inherit; }
+
+/* Responsive spacing */
+@media (max-width: 479.98px) {
+  .section { padding: 0.5rem 0 0.75rem; }
+  .container { padding: 0 0.75rem; }
+}
+
+@media (min-width: 480px) and (max-width: 767.98px) {
+  .section { padding: 0.65rem 0 1rem; }
+}
+
+@media (min-width: 768px) {
+  .section { padding: 0.75rem 0 1rem; }
+}
 
 /* Global links */
 a { color: var(--brand); text-decoration: none; }
